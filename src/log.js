@@ -17,13 +17,17 @@ module.exports = {
   /**
    * @param {String} message 
    */
-  _log: function(message, colorCode) {
+  _log: function(message, colorCode, data) {
 
     if (typeof colorCode !== 'undefined') {
       message = colorCode + message + '\x1B[39m';
     }
 
-    console.log(message);
+    if (typeof data === 'undefined') {
+      console.log(message);
+    } else {
+      console.log(message, data);
+    }
 
   },
 
@@ -31,8 +35,8 @@ module.exports = {
    * @method message 
    * @param {String} message
    */
-  info: function(message) {
-    this._log(message);
+  info: function(message, data) {
+    this._log(message, undefined, data);
   },
 
   /**
