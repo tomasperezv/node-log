@@ -1,0 +1,22 @@
+{
+  "name": "node-log",
+  "version": "0.1.0",
+  "description": "Console log wrapper with support for output color messages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tomasperezv/node-log.git"
+  },
+  "keywords": [
+    "log"
+  ],
+  "author": "Tomás Pérez <tom@0x101.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomasperezv/node-log/issues"
+  },
+  "homepage": "https://github.com/tomasperezv/node-log"
+}
